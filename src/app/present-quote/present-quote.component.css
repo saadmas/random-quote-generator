@@ -1,0 +1,36 @@
+h2 {
+    color: #081942;
+    font-family: 'Roboto', sans-serif;
+}
+
+.quote {
+    color: #8F691B;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    font-size: 20px;
+    border: 2px solid #FFE2A6;
+    border-radius: 5px;
+    background-color: #FFE2A6;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 8px 4px;
+}
+
+button:hover {
+    background-color: #8F691B;
+    border: 2px solid#8F691B;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+button:active {
+    background-color: #8F691B;
+    border: 2px solid#8F691B;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    transform: translateY(4px);
+}
