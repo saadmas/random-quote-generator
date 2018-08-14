@@ -1,6 +1,6 @@
 h1 {
-    color: #081942;
-    font-family: 'Roboto', sans-serif;
+    color: #373737;
+    font-family: 'Oswald', sans-serif;
     font-size: 50px;
-    text-align: center;
+    border-bottom: thick double #C0B283;
 }
