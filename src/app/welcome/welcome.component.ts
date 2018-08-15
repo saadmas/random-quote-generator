@@ -7,7 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./welcome.component.css']
 })
 export class WelcomeComponent {
+  presentQuoteVisible = false;
 
-
+  showPresentQuote(): void {
+    this.presentQuoteVisible = !this.presentQuoteVisible;
+  }
  
 }

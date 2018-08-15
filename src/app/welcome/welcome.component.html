@@ -2,4 +2,6 @@
   welcome to the random quote generator 
 </h1>
 
-<app-present-quote></app-present-quote>
+<div class="arrow-down" (click)='showPresentQuote()'></div>
+
+<app-present-quote *ngIf='presentQuoteVisible'></app-present-quote>
