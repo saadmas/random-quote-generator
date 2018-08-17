@@ -7,10 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./welcome.component.css']
 })
 export class WelcomeComponent {
-  presentQuoteVisible = false;
+  choosePersonVisible = false;
 
-  showPresentQuote(): void {
-    this.presentQuoteVisible = !this.presentQuoteVisible;
+  showChoosePerson(): void {
+    this.choosePersonVisible = !this.choosePersonVisible;
   }
  
 }

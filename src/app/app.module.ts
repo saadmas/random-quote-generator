@@ -7,13 +7,15 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { PresentQuoteComponent } from './present-quote/present-quote.component';
 
 import { QuoteGeneratorService } from './quote-generator.service';
+import { ChoosePersonComponent } from './choose-person/choose-person.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AppHeaderComponent,
     WelcomeComponent,
-    PresentQuoteComponent
+    PresentQuoteComponent,
+    ChoosePersonComponent
   ],
   imports: [
     BrowserModule

@@ -1,0 +1,14 @@
+h1 {
+    color: #373737;
+    font-family: 'Oswald', sans-serif;
+}
+
+.person-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.person {
+    color: #373737;
+    font-family: 'Roboto', sans-serif;
+}

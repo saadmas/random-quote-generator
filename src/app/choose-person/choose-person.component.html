@@ -1,0 +1,9 @@
+<h1>choose a character</h1>
+
+<div class="person-flex">
+    <div class="person" *ngFor='let person of persons'>
+        {{person}}
+    </div>
+</div>
+
+<app-present-quote *ngIf='presentQuoteVisible'></app-present-quote>
