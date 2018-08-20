@@ -8,9 +8,11 @@ import { Component } from '@angular/core';
 })
 export class WelcomeComponent {
   choosePersonVisible = false;
+  arrowAnimate = false;
 
   showChoosePerson(): void {
     this.choosePersonVisible = !this.choosePersonVisible;
+    this.arrowAnimate = !this.arrowAnimate;
   }
  
 }

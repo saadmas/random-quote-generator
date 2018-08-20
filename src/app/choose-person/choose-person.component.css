@@ -5,10 +5,73 @@ h1 {
 
 .person-flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .person {
     color: #373737;
     font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    border-radius: 2px;
+    border-color: #373737;
+}
+
+.selected {
+    color: #373737;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    font-weight: bolder;
+    border-radius: 2px;
+    border-color: #373737;
+    animation-name: bounce;
+    animation-duration: 1s;
+}
+
+@keyframes bounce {
+    from,
+  20%,
+  53%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%,
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+.fade-in {
+  animation-name: fade-in;
+  animation-duration: 1s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }

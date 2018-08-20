@@ -1,9 +1,10 @@
-<h1>choose a character</h1>
+<h1 class="fade-in">choose a character</h1>
 
-<div class="person-flex">
-    <div class="person" *ngFor='let person of persons'>
-        {{person}}
-    </div>
+<div class="person-flex fade-in">
+        <div class="person" *ngFor='let person of persons' 
+        [class.selected]="person === selectedPerson"
+        (click)="select(person);" [ngClass]="animatePerson ? 'person-bounce' : 'person'">{{person}}
+        </div>
 </div>
 
-<app-present-quote *ngIf='presentQuoteVisible'></app-present-quote>
+<app-present-quote></app-present-quote>

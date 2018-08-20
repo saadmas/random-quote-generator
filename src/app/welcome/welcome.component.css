@@ -1,3 +1,6 @@
+css {
+    background-color: black;
+}
 h1 {
     color: #373737;
     font-family: 'Oswald', sans-serif;
@@ -6,5 +9,31 @@ h1 {
     margin-bottom: 0px;
 }
 
+.arrow-down {
+    border: solid #C0B283;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    height: 30px;
+    width: 30px;
+}
 
-  
+.arrow-down-animate {
+    animation-name: arrow-animate;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+   
+}
+
+@keyframes arrow-animate {
+    from {
+        opacity: 1;
+      }
+    
+      to {
+        opacity: 0;
+        transform: translate(0, 2000px);
+      }
+}
+
