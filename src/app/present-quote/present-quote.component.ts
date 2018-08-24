@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { QuoteGeneratorService } from '../quote-generator.service';
 
 @Component({
@@ -7,8 +7,9 @@ import { QuoteGeneratorService } from '../quote-generator.service';
   styleUrls: ['./present-quote.component.css']
 })
 export class PresentQuoteComponent {
-  currentQuote: String;
-  prevQuote: String;
+  @Input() selectedPerson: string;
+  currentQuote: string;
+  prevQuote: string;
 
   constructor(private quoteGeneratorService: QuoteGeneratorService) {
 
@@ -20,7 +21,7 @@ export class PresentQuoteComponent {
       this.prevQuote = this.currentQuote;
     }
     // Get current quote to show
-    this.currentQuote = this.quoteGeneratorService.generateQuote();
+    this.currentQuote = this.quoteGeneratorService.generateQuote(this.selectedPerson);
     
   }
 }

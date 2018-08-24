@@ -11,8 +11,8 @@ export class WelcomeComponent {
   arrowAnimate = false;
 
   showChoosePerson(): void {
-    this.choosePersonVisible = !this.choosePersonVisible;
     this.arrowAnimate = !this.arrowAnimate;
+    this.choosePersonVisible = !this.choosePersonVisible;
   }
  
 }

@@ -1,14 +1,8 @@
 
 
-<h1>
-  welcome to the random quote generator 
-</h1>
-
-
+<h1>welcome to the random quote generator </h1>
 
 <app-choose-person *ngIf='choosePersonVisible'></app-choose-person>
 
-<div class="arrow-down" (click)="showChoosePerson()" [ngClass]="arrowAnimate ? 'arrow-down-animate' : 'arrow-down'">
-
-</div>
+<div (click)="showChoosePerson()" [ngClass]="arrowAnimate ? 'arrow-down-animate' : ' arrow-down'"></div>
 

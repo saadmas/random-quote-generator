@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class QuoteGeneratorService {
-  michaelScottQuotes = [
+  quotes = { MichaelScott : [
     "Would I rather be feared or loved? Easy. Both. I want people to be afraid of how much they love me.",
     "If I had a gun with two bullets and I was in a room with Hitler, Bin Laden, and Toby, I would shoot Toby twice.",
     "Webster's Dictionary defines wedding as: The fusing of two metals with a hot torch.",
@@ -28,11 +28,32 @@ export class QuoteGeneratorService {
     "Presents are the best way to show how much you care. It's a tangible thing you can point at and say 'Hey man, I love you. This many dollars worth.'",
     "I don't want people coming to work saying I might die today, that's what a hospital is for",
     "Wikipedia is the best thing ever. Anyone in the world can write anything they want about any subject, so you know you are getting the best possible information."
-  ]
+  ],
+  RonSwanson: ["When I eat, it is the food that is scared.","Keep your tears in your eyes where they belong.",
+  "I am not a sore loser. It's just that I prefer to win, and when I don't, I get furious.", "If there were more food and fewer people, this would be a perfect party.","Next thing you want to do is ditch the terrier, and get yourself a proper dog. Any dog under fifty pounds is a cat, and cats are pointless. ","Just give me all the bacon and eggs you have. Wait...wait. I worry what you just heard was: 'Give me a lot of bacon and eggs.' What I said was: 'Give me all the bacon and eggs you have.' Do you understand?",
+  "Never half-ass two things. Whole-ass one thing.","Birthdays were invented by Hallmark to sell cards.","When people get too chummy with me, I like to call them by the wrong name to let them know I don't really care about them.",
+  "There's only one thing I hate more than lying: skim milk. Which is water that is lying about being milk.","I'd wish you the best of luck but I believe luck is a concept created by the weak to explain their failures.","Dear frozen yogurt, you are the celery of desserts. Be ice cream or be nothing. Zero stars.",
+  "I'm not interested in caring about people.","Crying: Acceptable at funerals and the Grand Canyon.","Clear alcohols are for rich women on diets.","There are only three ways to motivate people: money, fear, and hunger.",
+  "Fishing relaxes me. It's like yoga except I still get to kill something.","Great job, everyone. The reception will be held in each of our individual houses, alone.","It's always a good idea to demonstrate to your coworkers that you are capable of withstanding a tremendous amount of pain.",
+  "Normally, if given the choice between doing something and nothing, I’d choose to do nothing. But I will do something if it helps someone else do nothing. I’d work all night, if it meant nothing got done.",
+  "I’m a simple man. I like pretty, dark-haired women, and breakfast food.","My first ex-wife's name is Tammy. My second ex-wife's name is Tammy. My Mom's name is Tamara...she goes by Tammy.",
+  "One rage every three months is permitted. Try not to hurt anyone who doesn’t deserve it.","Strippers do nothing for me…but I will take a free breakfast buffet anytime, anyplace.",
+  "The government is a greedy piglet that suckles on a taxpayer’s teat until they have sore, chapped nipples.",
+  "There has never been a sadness that can’t been cured by breakfast food.","If any of you need anything at all, too bad. Deal with your problems yourselves, like adults.",
+  "I once worked with a guy for three years and never learned his name. Best friend I ever had. We still never talk sometimes.",
+  "I don’t want to paint with a broad brush here, but every single contractor in the world is a miserable, incompetent thief.",
+  "Give a man a fish and feed him for a day. Don’t teach a man to fish…and feed yourself. He’s a grown man. And fishing’s not that hard.",
+  "Sting like a bee. Do not float like a butterfly. That's ridiculous.","Give 100%. 110% is impossible. Only idiots recommend that.",
+  "Turkey can never beat cow.","Capitalism: God's way of determining who is smart and who is poor.",
+  "There is only one bad word: taxes.","Friends: one to three is sufficient."
+  ],
+  };
   constructor() { }
 
-  generateQuote(): String {
+  generateQuote(person: string): string {
+    // remove spaces from person's name to properly access quotes
+    person=person.replace(/\s/g, "");
     //randomIndex = Math.random();
-    return this.michaelScottQuotes[ Math.floor(Math.random()*this.michaelScottQuotes.length) ];
+    return this.quotes[person][Math.floor(Math.random()*this.quotes[person].length) ];
   }
 }
