@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
-import { PresentQuoteComponent } from './present-quote/present-quote.component';
 
 import { QuoteGeneratorService } from './quote-generator.service';
 import { ChoosePersonComponent } from './choose-person/choose-person.component';
@@ -12,7 +11,6 @@ import { ChoosePersonComponent } from './choose-person/choose-person.component';
   declarations: [
     AppComponent,
     WelcomeComponent,
-    PresentQuoteComponent,
     ChoosePersonComponent
   ],
   imports: [

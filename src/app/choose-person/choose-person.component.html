@@ -3,8 +3,14 @@
 <div class="person-flex fade-in">
         <div class="person" *ngFor='let person of persons' 
         [class.selected]="person === selectedPerson"
-        (click)="select(person);" [ngClass]="animatePerson ? 'person-bounce' : 'person'">{{person}}
+        (click)="showQuote(person);" [ngClass]="animatePerson ? 'person-bounce' : 'person'">{{person}}
         </div>
 </div>
 
-<app-present-quote [selectedPerson]='selectedPerson'></app-present-quote>
+<div class="quote" *ngIf='selectedPerson'>
+        "{{currentQuote}}"
+        <br><a class="twitter-share-button"href='https://twitter.com/intent/tweet?text={{currentQuote}} - Michael S'>
+                tweet this
+        </a>
+</div>
+      

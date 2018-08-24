@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { QuoteGeneratorService } from '../quote-generator.service';
 
 @Component({
   selector: 'app-choose-person',
@@ -7,14 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChoosePersonComponent{
   persons = ['Michael Scott',"Lucille Bluth","Ron Swanson","Tina Belcher"];
-  presentQuoteVisible = false;
   selectedPerson: string;
+  currentQuote: string;
 
-  constructor() { }
+  constructor(private quoteGeneratorService: QuoteGeneratorService) { }
 
-  select(clickedPerson: string) {
-    this.presentQuoteVisible = !this.presentQuoteVisible;
+  showQuote(clickedPerson: string) {
     this.selectedPerson= clickedPerson;
+    // Get current quote to show
+    this.currentQuote = this.quoteGeneratorService.generateQuote(this.selectedPerson);
+    
   }
   
 

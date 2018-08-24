@@ -83,3 +83,16 @@ h1 {
     opacity: 1;
   }
 }
+
+.quote {
+  color:  #373737;
+  font-weight: 900;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.twitter-share-button {
+  font-size: 12px;
+}
