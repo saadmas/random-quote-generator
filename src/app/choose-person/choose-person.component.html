@@ -1,10 +1,10 @@
 <h1 class="fade-in">choose a character</h1>
 
 <div class="person-flex fade-in">
-        <div class="person" *ngFor='let person of persons' 
+        <label class="person" *ngFor='let person of persons' 
         [class.selected]="person === selectedPerson"
         (click)="showQuote(person);" [ngClass]="animatePerson ? 'person-bounce' : 'person'">{{person}}
-        </div>
+        </label>
 </div>
 
 <div class="quote" *ngIf='selectedPerson'>

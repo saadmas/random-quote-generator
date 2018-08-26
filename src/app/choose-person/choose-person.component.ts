@@ -7,7 +7,7 @@ import { QuoteGeneratorService } from '../quote-generator.service';
   styleUrls: ['./choose-person.component.css']
 })
 export class ChoosePersonComponent{
-  persons = ['Michael Scott',"Lucille Bluth","Ron Swanson","Tina Belcher"];
+  persons = ['Michael Scott',"Princess Carolyn","Ron Swanson","Tina Belcher"];
   selectedPerson: string;
   currentQuote: string;
 

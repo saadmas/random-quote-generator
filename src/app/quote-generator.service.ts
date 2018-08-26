@@ -47,6 +47,24 @@ export class QuoteGeneratorService {
   "Turkey can never beat cow.","Capitalism: God's way of determining who is smart and who is poor.",
   "There is only one bad word: taxes.","Friends: one to three is sufficient."
   ],
+  TinaBelcher: ["I am a smart, strong, sensual woman.","I'm no hero. I put my bra on one boob at a time, just like everyone else.",
+  "Your ass is grass, and I'm gonna mow it.","Dad, if you believe you're beautiful, you will be. I did.",
+  "I don't need a boy to pay attention to me. I'll pay attention to myself.", "Time for the charm bomb to explode.",
+  "Is it possible to be in love with twenty-five people at once?","I've logged 3,000 fantasy hours into this relationship. You don't just throw that away.",
+  "Butts.","Dear Lord Santa, this year please bless me with a calendar of Australian firefighters holding puppies in a casual setting.",
+  "Oh, it’s okay. I guess I wasn’t meant to have a good life.","My heart just pooped its pants.","If you need me, I’ll be here on the floor dying.",
+  "Our toaster is also confused. It doesn’t know where bagels go."
+  ],
+  PrincessCarolyn: ["That woman can knock a drink back like a Kennedy at a wake for another Kennedy, but I'll be damned if she doesn't get shit done!",
+  "My life is a mess right now and I compulsively take care of other people when I don't know how to take care of myself.",
+  "Aw, fish!","Wake up Captain Dumbshit","Serves you right for having feelings","You need to get your shit together.",
+  "You know what might help? If you think of this thing like a professional, instead of a big titty baby.",
+  "Who's gonna water the plants?...It was my job when I was an intern, but nobody told me to stop.",
+  "You know, it's funny, when you look at someone through rose colored glasses, all the red flags just look like flags",
+  "Laura! Clear our my schedule! I have to push a boulder up a hill and then have it roll over me time and time again with no regard for my well-being!",
+  "Why would you serve dates and not have a place to put the pits? You know, some people just have no class.",
+  "Stop pissing off the orphans. A lot of them grow up to be serial killers.","This funeral's a real who's-who. Henry Winkler, Jake and Maggot Gyllenhaal, that Pakistani girl who keeps winning Nobel Prizes—I'm gonna go rub me some elbows."
+  ]
   };
   constructor() { }
 
