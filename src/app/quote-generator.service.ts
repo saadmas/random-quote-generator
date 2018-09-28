@@ -71,7 +71,8 @@ export class QuoteGeneratorService {
   generateQuote(person: string): string {
     // remove spaces from person's name to properly access quotes
     person=person.replace(/\s/g, "");
-    //randomIndex = Math.random();
-    return this.quotes[person][Math.floor(Math.random()*this.quotes[person].length) ];
+    // return a random quote
+    let randomIndex: number = Math.floor(Math.random()*this.quotes[person].length);
+    return this.quotes[person][randomIndex];
   }
 }
