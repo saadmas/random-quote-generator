@@ -1,6 +1,6 @@
 # Random Quote Generator
 
-A simple web app wthat allows you to choose from 4 characters and randomly generate quotes on selection.
+A simple web app that allows you to choose from 4 characters and randomly generate quotes on selection.
 
 Basic animation and option to Tweet quote included.
 
