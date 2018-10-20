@@ -1,4 +1,8 @@
-# RandomQuoteGenerator
+# Random Quote Generator
+
+A simple web app wthat allows you to choose from 4 characters and randomly generate quotes on selection.
+
+Basic animation and option to Tweet quote included.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
