@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ButtonsModule } from 'ngx-bootstrap/buttons';
 
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
@@ -14,7 +15,8 @@ import { ChoosePersonComponent } from './choose-person/choose-person.component';
     ChoosePersonComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ButtonsModule.forRoot()
   ],
   providers: [QuoteGeneratorService],
   bootstrap: [AppComponent]
