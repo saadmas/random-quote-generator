@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ButtonsModule } from 'ngx-bootstrap/buttons';
+import { JwSocialButtonsModule } from 'jw-angular-social-buttons';
 
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
@@ -16,7 +16,7 @@ import { ChoosePersonComponent } from './choose-person/choose-person.component';
   ],
   imports: [
     BrowserModule,
-    ButtonsModule.forRoot()
+    JwSocialButtonsModule
   ],
   providers: [QuoteGeneratorService],
   bootstrap: [AppComponent]
