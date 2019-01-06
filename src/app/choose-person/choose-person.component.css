@@ -1,11 +1,12 @@
 h1 {
     color: #373737;
     font-family: 'Oswald', sans-serif;
+    margin-top: 20px;
 }
 
 .person-flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .person {
@@ -16,6 +17,7 @@ h1 {
     border-radius: 2px;
     border-color: #373737;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 .selected {
